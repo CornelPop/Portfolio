@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+
+</head>
+<body class="body">
+
+<div class="hero">
+    <img src="pictures/provizoriu.jpg" alt="Hero Image">
+    <div class="hero-text">
+        <h1>Welcome to My Website</h1>
+        <p>I am a Software Engineer</p>
+    </div>
+    <button class="btn download" onclick="downloadResume()"><span>Download Resume</span></button>
+    <div class="navbar">
+        <a href="#about">About me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</div>
+
+<div id="about" class="about">
+    <div class="information">
+        <div class="text">
+            <h1 style="margin-bottom: 50px;">About Me</h1>
+            <p style="margin-bottom: 50px;">Hey there, I'm Pop Cornel - Adrian, a college student with big dreams in the world of software engineering.
+                 My journey in the realm of technology is fueled by a deep passion for coding and creating innovative solutions. 
+                 From the moment I discovered the power of programming, I knew this was my calling. Every line of code I write 
+                 is a step closer to realizing my goal of becoming a skilled software engineer. Challenges excite me; they're 
+                 opportunities to learn and grow. With determination and a hunger for knowledge, I'm ready to make my mark 
+                 on the tech industry and turn my visions into reality, one line of code at a time.</p>
+            <div class="tech-stack">
+                <p>Tech Stack: </p>
+                <img src="pictures/java.png" class="image">
+                <img src="pictures/sql.png" class="image">
+                <img src="pictures/boot.png" class="image">
+                <img src="pictures/c.png" class="image">
+                <img src="pictures/dart.png" class="image">
+                <img src="pictures/flutter.png" class="image">
+                <img src="pictures/html.png" class="image">
+                <img src="pictures/css.png" class="image">
+            </div>
+        </div>
+        <img src="pictures/palarie.jpg" alt="Your Image">
+    </div>
+</div>
+
+
+<div id="projects" class="projects" style="height: 1500px; background-color: white;">
+    <div class="projectsInfo">
+        <h1>Projects Section</h1>
+        <p style="font-size: 18px; font-weight: bold; margin-bottom: 50px;">Each project is an unique piece of development.</p>
+        
+        <div class="project">
+            <div class="text" style="padding-right: 50px;">
+                <h2>Book Library</h2>
+                <p>My Java project is a Book Library system integrated with an SQL database. Customers can buy books, 
+                    employees can manage the book collection by performing CRUD (Create, Read, Update, Delete) operations. 
+                    I used design patterns like the Factory and Builder patterns, respecting OOP principles and LISKOV. 
+                    These design principles facilitate efficient data manipulation and ensure a user-friendly experience 
+                    within the application.</p>
+                <div class="tech">
+                    <img src="pictures/java.png">
+                    <img src="pictures/sql.png">
+                </div>
+                <button class="github-button" onclick="redirectToBookLibrary()">
+                    <span>Code</span>
+                    <i class="fab fa-github"></i>
+                </button>                  
+            </div>
+            <div>
+                <img src="pictures/library.jpg" class="singleImage">
+            </div>
+        </div>
+        
+        <div class="project">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="pictures/lan1.png" style="width:100%">
+                </div>
+        
+                <div class="mySlides fade">
+                    <img src="pictures/lan2.png" style="width:100%">
+                </div>
+        
+                <div class="mySlides fade">
+                    <img src="pictures/lan3.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="pictures/lan4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="pictures/lan5.png" style="width:100%">
+                </div>
+        
+                <div class="mySlides fade">
+                    <img src="pictures/lan6.png" style="width:100%">
+                </div>
+
+                <div class="next_prev">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <div class="text">
+                <h2>Languagele</h2>
+                <p>First mobile app developed by me in Dart language with over 200 downloads. It is a language guessing game and it can 
+                    be downloaded from the Play Store, unfortunately available only on Android. There will be updates as 
+                    soon as possible.</p>
+                <div class="tech">
+                    <img src="pictures/dart.png">
+                    <img src="pictures/flutter.png">
+                </div>
+                <button class="github-button" onclick="redirectToLanguagele()">
+                    <span>Code</span>
+                    <i class="fab fa-github"></i>
+                  </button>                  
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="text">
+                <h2>MemoMaster</h2>
+                <p>The second mobile app developed by me in the Dart language. I use Firebase to organize each player's 
+                    data on a server. This app is currently under development and it is a improve intelligence game, 
+                    by memorizing things like patterns, numbers and words.</p>
+                <div class="tech">
+                    <img src="pictures/dart.png">
+                    <img src="pictures/flutter.png">
+                </div>
+                <button class="github-button" onclick="redirectToMemoMaster()">
+                    <span>Code</span>
+                    <i class="fab fa-github"></i>
+                  </button>                  
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides2 fade">
+                    <img src="pictures/memomaster1.png" style="width:100%">
+                </div>
+        
+                <div class="mySlides2 fade">
+                    <img src="pictures/memomaster2.png" style="width:100%">
+                </div>
+        
+                <div class="mySlides2 fade">
+                    <img src="pictures/memomaster3.png" style="width:100%">
+                </div>
+        
+                <div class="next_prev">
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="contact" style="height: 1000px; background-color: lightcoral;">
+    <h2>if you want to contact him, please just for work because he has a beautiful wife and a little Jacky. 
+        If you need more information, please contact his manager: +39 3203441234. Thank you
+
+
+    </h2>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
