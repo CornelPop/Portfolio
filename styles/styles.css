@@ -28,18 +28,6 @@
     color: black;
 }
 
-.contact {
-    color: #333; 
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
 #myBtn {
   display: none;
   position: fixed;
