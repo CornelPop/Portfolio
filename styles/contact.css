@@ -11,14 +11,29 @@
 .contactInfo {
     font-size: 18px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: left;
     margin-left: 300px;
     margin-right: 300px;
 }
 
-.form {
-  margin-bottom: 50px;
+.sendEmail {
+  width: 50%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+}
+
+.socials i {
+  font-size: 24px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 input[type=text] {
@@ -34,4 +49,18 @@ input[type=text] {
   
   input[type=text]:focus {
     border: 3px solid #555;
+  }
+
+  .button {
+    font-weight: bold;
+    margin-top: 35px;
+    position: relative;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
