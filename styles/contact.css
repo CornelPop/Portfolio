@@ -1,5 +1,5 @@
 .contact {
-    height: 600px; 
+    height: 700px; 
     background-color: white;
     color: #333; 
     display: flex;
@@ -24,16 +24,17 @@
 .socials {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: left;
   width: 50%;
+  position: relative;
+  left: 25%;
+  top: 40%;
 }
 
 .socials i {
   font-size: 24px;
   margin-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 input[type=text] {
@@ -51,7 +52,7 @@ input[type=text] {
     border: 3px solid #555;
   }
 
-  .button {
+  .submit-button {
     font-weight: bold;
     margin-top: 35px;
     position: relative;
@@ -64,3 +65,78 @@ input[type=text] {
     cursor: pointer;
     transition: background-color 0.3s;
   }
+
+  .submit-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .submit-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .submit-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .submit-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .submit-button:active span::after {
+    right: 10px;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+.socials-button {
+  font-weight: bold;
+  position: relative;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  padding: 10px 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.socials-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.socials-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.socials-button:hover span {
+  padding-right: 25px;
+}
+
+.socials-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.socials-button:active span::after {
+  right: 10px;
+  transition: 0.5s;
+  opacity: 0;
+}

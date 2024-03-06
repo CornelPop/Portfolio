@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -21,6 +25,7 @@
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    transition: background-color 0.8s;
 }
 
 .navbar a:hover {
@@ -36,12 +41,14 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: red;
+  background-image: url("/pictures/rocket.jpg");
+  background-size: cover;
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
+  transition: all 1s ease;
 }
 
 #myBtn:hover {
